@@ -5,11 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio.exe</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="assets/icon.ico" type="image/x-icon" />
   </head>
   <body>
     <canvas id="canvasBg"> </canvas>
+
+    <!-- ? Main Content -->
+    <div class="main-content">
+      <!-- ? Navbar -->
+      <div class="navbar">
+        <nav class="nav">
+          <span class="logo-title">Portfolio.exe</span>
+          <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#exp">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- ? Home Section -->
+      <div class="home-section">
+        <div class="home-content">
+          <h3>Hello, It's Me</h3>
+          <h1>Akshut Goyal</h1>
+          <h3>And I'm a <span class="multi-text">Frontend Developer</span></h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id
+            autem corporis ratione quaerat reiciendis cumque possimus hic
+            recusandae velit reprehenderit et sapiente quod quos omnis magni,
+            sequi rem tenetur.
+          </p>
+        </div>
+        <div class="home-img">
+          <div class="img-box">
+            <img src="assets/img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- ? Site Loader -->
     <div class="loader-wrapper">
@@ -84,6 +120,7 @@
     </div>
 
     <script src="libraries/jquery-3.6.4.min.js"></script>
-    <script src="script.js"></script>
+    <script src="libraries/typed.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
