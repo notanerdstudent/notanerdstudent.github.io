@@ -1,3 +1,12 @@
+// ! Title Scroll
+(function titleScroller(text) {
+  document.title = text;
+  setTimeout(function () {
+    titleScroller(text.substr(1) + text.substr(0, 1));
+  }, 500);
+})(document.title + " - ");
+// ? Title Scroll
+
 // ! Loading
 $(window).on("load", function () {
   $(".loader-wrapper").delay(2500).fadeOut("slow");
