@@ -158,7 +158,6 @@ var typed = new Typed(".multi-text", {
   ],
   smartBackspace: true,
   loop: true,
-  shuffle: true,
   typeSpeed: 100,
   startDelay: 1000,
   backDelay: 1000,
