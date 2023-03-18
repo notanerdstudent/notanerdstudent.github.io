@@ -163,3 +163,11 @@ var typed = new Typed(".multi-text", {
   backDelay: 1000,
   backSpeed: 100,
 });
+
+// ? Change Navbar color on scroll
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar");
+    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+  });
+});

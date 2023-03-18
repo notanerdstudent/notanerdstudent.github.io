@@ -276,8 +276,13 @@ canvas {
   top: 0;
   position: sticky;
   z-index: 1000;
-  box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.4);
   overflow: hidden;
+}
+
+.scrolled {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
 }
 
 .nav {
@@ -342,6 +347,7 @@ canvas {
   position: relative;
   justify-content: space-between;
   display: flex;
+  /* font-family: "Oswald", sans-serif; */
   font-family: "Playfair Display", serif;
   color: white;
   align-items: center;
