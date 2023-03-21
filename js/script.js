@@ -161,6 +161,7 @@ hamburger.addEventListener("click", () => {
 
   hamburger.classList.toggle("toggle");
 });
+// ? Navbar
 
 // ! Typed Effect
 var typed = new Typed(".multi-text", {
