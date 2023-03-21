@@ -11,7 +11,6 @@
 $(window).on("load", function () {
   $(".loader-wrapper").delay(2500).fadeOut("slow");
 });
-
 // ? Loading
 
 // ! Background Canvas
@@ -149,6 +148,20 @@ window.addEventListener("resize", function () {
 });
 // ? Background Canvas
 
+// ! Navbar
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+  links.forEach((link) => {
+    link.classList.toggle("fade");
+  });
+
+  hamburger.classList.toggle("toggle");
+});
+
 // ! Typed Effect
 var typed = new Typed(".multi-text", {
   strings: [
@@ -163,11 +176,13 @@ var typed = new Typed(".multi-text", {
   backDelay: 1000,
   backSpeed: 100,
 });
+// ? Typed Effect
 
-// ? Change Navbar color on scroll
+// ! Change Navbar color on scroll
 $(function () {
   $(document).scroll(function () {
     var $nav = $(".navbar");
     $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
   });
 });
+// ? Change Navbar color on scroll
