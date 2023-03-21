@@ -366,6 +366,7 @@ canvas {
     #ff004c 13em
   );
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: move 35s linear infinite;
 }
