@@ -89,7 +89,7 @@ body {
 
 .preloader {
   font: 1.2em Dosis, sans-serif;
-  color: var(--highlights);
+  color: var(--color);
   display: flex;
   animation: tiltSpin 8s linear infinite;
   flex-direction: column;
@@ -342,7 +342,8 @@ canvas {
 /* ! Home Section */
 .home-section,
 .about-section,
-.skills {
+.skills,
+.portfolio {
   margin-top: 20px;
   box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.4);
   border-radius: 10px;
@@ -375,7 +376,8 @@ canvas {
 
 .home-content h3 span,
 .about-content .title span,
-.skills .title span {
+.skills .title span,
+.portfolio .title span {
   background-image: linear-gradient(
     to right,
     #ff004c 1em,
@@ -470,14 +472,16 @@ canvas {
 }
 
 .about-content .title,
-.skills .title {
+.skills .title,
+.portfolio .title {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
 }
 
 .about-content .title span,
-.skills .title span {
+.skills .title span,
+.portfolio .title span {
   color: var(--color);
   font-size: 50px;
   font-weight: 600;
@@ -488,18 +492,21 @@ canvas {
 .about-content .title span::before,
 .about-content .title span::after,
 .skills .title span::before,
-.skills .title span::after {
+.skills .title span::after,
+.portfolio .title span::before,
+.portfolio .title span::after {
   content: "";
   position: absolute;
   height: 3px;
   width: 100%;
-  background: var(--highlights);
+  background: var(--color);
   left: 0;
   bottom: 0;
 }
 
 .about-content .title span::after,
-.skills .title span::after {
+.skills .title span::after,
+.portfolio .title span::after {
   bottom: -7px;
   width: 70%;
   left: 50%;
@@ -583,7 +590,7 @@ button:hover:before {
 }
 
 .topic {
-  color: var(--highlights);
+  color: var(--color);
   font-size: 25px;
   font-weight: 500;
   margin-bottom: 10px;
@@ -625,7 +632,7 @@ button:hover:before {
 .skills-icon {
   font-size: 2rem;
   margin-right: 2rem;
-  color: var(--highlights);
+  color: var(--color);
 }
 
 .skills-name {
@@ -637,7 +644,7 @@ button:hover:before {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: var(--highlights);
+  background-color: var(--color);
   height: 0.25rem;
   border-radius: 0.5rem;
   z-index: 100;
@@ -659,7 +666,7 @@ button:hover:before {
 }
 
 .skills-percent {
-  color: var(--highlights);
+  color: var(--color);
 }
 
 .skills__html {
@@ -676,6 +683,83 @@ button:hover:before {
 
 .skills__php {
   width: 95%;
+}
+
+/* ? Portfolio Section */
+.portfolio {
+  min-height: calc(100vh - 100px);
+  height: auto;
+  display: block;
+}
+
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.portfolio-content .portfolio-box {
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--background);
+  overflow: hidden;
+  display: flex;
+}
+
+.portfolio-box img {
+  width: 100%;
+  transition: 0.5s ease;
+}
+
+.portfolio-box:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-box .portfolio-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 4rem;
+  transform: translateY(100%);
+  transition: 0.5s ease;
+}
+
+.portfolio-box:hover .portfolio-layer {
+  transform: translateY(0);
+}
+
+.portfolio-layer h4 {
+  font-size: 2rem;
+}
+
+.portfolio-layer p {
+  font-size: 15px;
+  margin: 0.3rem 0 1rem;
+}
+
+.portfolio-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: var(--background);
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.portfolio-layer a i {
+  font-size: 20px;
+  color: var(--color);
 }
 
 /* * Responsive */
