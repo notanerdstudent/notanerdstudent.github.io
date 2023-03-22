@@ -169,6 +169,7 @@ var typed = new Typed(".multi-text", {
     "Frotend Developer.",
     "Backend Developer.",
     "Android App Developer.",
+    "Flutter Developer.",
   ],
   smartBackspace: true,
   loop: true,
@@ -187,3 +188,13 @@ $(function () {
   });
 });
 // ? Change Navbar color on scroll
+
+// ! Vanilla Tilt Card
+VanillaTilt.init(document.querySelectorAll(".card"), {
+  max: 25,
+  speed: 400,
+  scale: 1.1,
+  glare: true,
+  "max-glare": 1,
+});
+// ? Vanilla Tilt Card
