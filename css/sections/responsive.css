@@ -20,6 +20,14 @@
     font-size: 15px;
     width: 65%;
   }
+
+  .portfolio-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio-box .portfolio-layer {
+    padding: 0 2rem;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -87,14 +95,6 @@
 
   .topic {
     text-align: center;
-  }
-
-  .portfolio-content {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .portfolio-box .portfolio-layer {
-    padding: 0 2rem;
   }
 }
 @media screen and (max-width: 700px) {
