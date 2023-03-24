@@ -1,0 +1,133 @@
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: var(--background);
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer-content h3 {
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 15px;
+  color: #cacdd2;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  display: inline-block;
+  width: 45px !important;
+  height: 45px !important;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid white;
+  padding: 10px;
+
+  border-radius: 50%;
+}
+
+.socials a i {
+  width: 18px;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.4s ease;
+}
+
+.socials a:hover i {
+  color: var(--color);
+}
+
+.footer-bottom {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 20px;
+  text-align: center;
+  flex-direction: column-reverse;
+}
+
+.footer-bottom p {
+  font-size: 18px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom p a {
+  color: var(--color);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}
+
+.footer-menu ul {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.footer-menu ul li {
+  font-size: 18px;
+  padding: 0 20px;
+  display: block;
+}
+
+.footer-menu ul li a {
+  color: #cfd2d6;
+  text-decoration: none;
+}
+
+.footer-menu ul li a:hover {
+  color: var(--color);
+}
+
+@media screen and (max-width: 600px) {
+  .footer-menu ul {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer-menu ul li {
+    font-size: 14px;
+  }
+}
