@@ -76,7 +76,7 @@ button:after {
 
 button:hover:before {
   background-position: -106.25em 0;
-  transition: 10s linear;
+  animation: moveBorder 10s linear infinite;
 }
 
 .about-details .right {

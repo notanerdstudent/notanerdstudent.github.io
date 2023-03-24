@@ -89,3 +89,12 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+@keyframes moveBorder {
+  0% {
+  }
+
+  100% {
+    background-position: -100em 0;
+  }
+}
