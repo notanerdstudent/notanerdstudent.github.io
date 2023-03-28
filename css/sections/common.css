@@ -3,7 +3,8 @@
 .about-section,
 .skills,
 .portfolio,
-.services {
+.services,
+.contact {
   margin-top: 20px;
   box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.4);
   border-radius: 10px;
@@ -25,7 +26,8 @@
 .about-content .title span,
 .skills .title span,
 .portfolio .title span,
-.services .title span {
+.services .title span,
+.contact .title span {
   background-image: linear-gradient(
     to right,
     #ff004c 1em,
@@ -46,7 +48,8 @@
 .about-content .title,
 .skills .title,
 .portfolio .title,
-.services .title {
+.services .title,
+.contact .title {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
@@ -55,7 +58,8 @@
 .about-content .title span,
 .skills .title span,
 .portfolio .title span,
-.services .title span {
+.services .title span,
+.contact .title span {
   color: var(--color);
   font-size: 50px;
   font-weight: 600;
@@ -70,7 +74,9 @@
 .portfolio .title span::before,
 .portfolio .title span::after,
 .services .title span::before,
-.services .title span::after {
+.services .title span::after,
+.contact .title span::before,
+.contact .title span::after {
   content: "";
   position: absolute;
   height: 3px;
@@ -83,7 +89,8 @@
 .about-content .title span::after,
 .skills .title span::after,
 .portfolio .title span::after,
-.services .title span::after {
+.services .title span::after,
+.contact .title span::after {
   bottom: -7px;
   width: 70%;
   left: 50%;
@@ -92,6 +99,7 @@
 
 @keyframes moveBorder {
   0% {
+    background-position: 100em 0;
   }
 
   100% {

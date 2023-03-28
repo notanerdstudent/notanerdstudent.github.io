@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/sections/skills.css" />
     <link rel="stylesheet" href="css/sections/portfolio.css" />
     <link rel="stylesheet" href="css/sections/services.css" />
+    <link rel="stylesheet" href="css/sections/contact.css" />
+
     <link rel="stylesheet" href="css/footer.css" />
 
     <link rel="stylesheet" href="css/sections/responsive.css" />
@@ -211,61 +213,62 @@
 
       <!-- Skills -->
       <section class="skills" id="skills">
-        <div class="title"><span>Skills</span></div>
+        <div>
+          <div class="title"><span>Skills</span></div>
+          <div class="skills-content">
+            <div>
+              <h2 class="skills-subtitle">Profesional Skills</h2>
+              <p class="skills-text">
+                By leveraging my knowledge of web development technologies, I
+                can design a visually appealing and interactive website that
+                effectively communicates my skills and expertise, while
+                highlighting my previous work and accomplishments.
+              </p>
+              <div class="skills-data">
+                <div class="skills-name">
+                  <i class="fa-brands fa-html5 skills-icon"></i>
+                  <span class="skills-name">HTML5</span>
+                </div>
+                <div class="skills-bar skills__html"></div>
+                <div>
+                  <span class="skills-percent">90%</span>
+                </div>
+              </div>
+              <div class="skills-data">
+                <div class="skills-name">
+                  <i class="fa-brands fa-css3-alt skills-icon"></i>
+                  <span class="skills_name">CSS3</span>
+                </div>
+                <div class="skills-bar skills__css"></div>
+                <div>
+                  <span class="skills-percent">75%</span>
+                </div>
+              </div>
+              <div class="skills-data">
+                <div class="skills-name">
+                  <i class="fa-brands fa-js skills-icon"></i>
+                  <span class="skills-name">JAVASCRIPT</span>
+                </div>
+                <div class="skills-bar skills__js"></div>
+                <div>
+                  <span class="skills-percent">80%</span>
+                </div>
+              </div>
+              <div class="skills-data">
+                <div class="skills-name">
+                  <i class="fa-brands fa-php skills-icon"></i>
+                  <span class="skills-name">PHP</span>
+                </div>
+                <div class="skills-bar skills__php"></div>
+                <div>
+                  <span class="skills-percent">95%</span>
+                </div>
+              </div>
+            </div>
 
-        <div class="skills-content">
-          <div>
-            <h2 class="skills-subtitle">Profesional Skills</h2>
-            <p class="skills-text">
-              By leveraging my knowledge of web development technologies, I can
-              design a visually appealing and interactive website that
-              effectively communicates my skills and expertise, while
-              highlighting my previous work and accomplishments.
-            </p>
-            <div class="skills-data">
-              <div class="skills-name">
-                <i class="fa-brands fa-html5 skills-icon"></i>
-                <span class="skills-name">HTML5</span>
-              </div>
-              <div class="skills-bar skills__html"></div>
-              <div>
-                <span class="skills-percent">90%</span>
-              </div>
+            <div>
+              <img src="assets/img.png" alt="" class="skills-img" />
             </div>
-            <div class="skills-data">
-              <div class="skills-name">
-                <i class="fa-brands fa-css3-alt skills-icon"></i>
-                <span class="skills_name">CSS3</span>
-              </div>
-              <div class="skills-bar skills__css"></div>
-              <div>
-                <span class="skills-percent">75%</span>
-              </div>
-            </div>
-            <div class="skills-data">
-              <div class="skills-name">
-                <i class="fa-brands fa-js skills-icon"></i>
-                <span class="skills-name">JAVASCRIPT</span>
-              </div>
-              <div class="skills-bar skills__js"></div>
-              <div>
-                <span class="skills-percent">80%</span>
-              </div>
-            </div>
-            <div class="skills-data">
-              <div class="skills-name">
-                <i class="fa-brands fa-php skills-icon"></i>
-                <span class="skills-name">PHP</span>
-              </div>
-              <div class="skills-bar skills__php"></div>
-              <div>
-                <span class="skills-percent">95%</span>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <img src="assets/img.png" alt="" class="skills-img" />
           </div>
         </div>
       </section>
@@ -274,7 +277,6 @@
       <section class="portfolio" id="portfolio">
         <div class="container">
           <div class="title"><span>Portfolio</span></div>
-
           <div class="portfolio-content">
             <div class="portfolio-box">
               <img src="assets/img.png" alt="" />
@@ -321,6 +323,7 @@
         </div>
       </section>
 
+      <!-- Services -->
       <section id="services" class="services">
         <div class="title"><span>Services</span></div>
         <div class="container">
@@ -353,8 +356,70 @@
           </div>
         </div>
       </section>
+
+      <!-- Contact -->
+      <section id="contact" class="contact">
+        <div class="contact-content">
+          <div class="title"><span>Contact Me</span></div>
+          <form action="">
+            <div class="container">
+              <div class="row-100">
+                <div class="col">
+                  <div class="inputBox">
+                    <input type="text" name="" required />
+                    <span class="text">First Name</span>
+                    <span class="line"></span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="inputBox">
+                    <input type="text" name="" required />
+                    <span class="text">Last Name</span>
+                    <span class="line"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row-100">
+                <div class="col">
+                  <div class="inputBox">
+                    <input type="email" name="" required />
+                    <span class="text">Email</span>
+                    <span class="line"></span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="inputBox">
+                    <input type="tel" name="" required />
+                    <span class="text">Mobile</span>
+                    <span class="line"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row-100">
+                <div class="col">
+                  <div class="inputBox textarea">
+                    <textarea name="" id="" required></textarea>
+                    <span class="text">Your Concerns..</span>
+                    <span class="line"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row-100">
+                <div class="col">
+                  <button class="styled-button">
+                    <input type="submit" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
     </article>
 
+    <!-- Footer -->
     <footer>
       <div class="footer-content">
         <h3>Akshut.me</h3>
@@ -397,6 +462,7 @@
       </div>
     </footer>
 
+    <!-- Back To Top -->
     <div class="progress-wrap">
       <svg
         class="progress-circle svg-content"
