@@ -47,19 +47,18 @@ footer {
 }
 
 .socials a {
-  display: inline-block;
   width: 45px !important;
   height: 45px !important;
   text-decoration: none;
   color: #fff;
   border: 1px solid white;
-  padding: 10px;
-
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
 }
 
 .socials a i {
-  width: 18px;
   font-size: 18px;
   align-items: center;
   justify-content: center;
