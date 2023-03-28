@@ -8,6 +8,7 @@ footer {
   padding-top: 40px;
   color: #fff;
   font-family: "Oswald", sans-serif;
+  margin-top: 40px;
 }
 
 .footer-content {
@@ -77,6 +78,7 @@ footer {
   padding: 20px;
   text-align: center;
   flex-direction: column-reverse;
+  align-items: center;
 }
 
 .footer-bottom p {
@@ -120,14 +122,27 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  .footer-menu {
+    max-width: 90%;
+  }
   .footer-menu ul {
     margin-top: 10px;
     margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
-@media screen and (max-width: 450px) {
-  .footer-menu ul li {
-    font-size: 14px;
+@media screen and (max-width: 500px) {
+  .footer-menu ul {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer-menu ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 }

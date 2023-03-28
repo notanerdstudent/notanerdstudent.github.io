@@ -2,8 +2,6 @@
 .skills {
   min-height: 100vh;
   height: auto;
-  display: block;
-  flex-direction: column;
 }
 
 .skills-content {
