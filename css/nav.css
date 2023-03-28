@@ -15,6 +15,10 @@ nav {
   padding: 3vh 3vw;
 }
 
+.logo a {
+  text-decoration: none;
+}
+
 .logo-title {
   font-family: "Barrio", cursive;
   color: white;
