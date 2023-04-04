@@ -166,7 +166,7 @@ hamburger.addEventListener("click", () => {
 // ! Typed Effect
 var typed = new Typed(".multi-text", {
   strings: [
-    "Frotend Developer.",
+    "Frontend Developer.",
     "Backend Developer.",
     "Android App Developer.",
     "Flutter Developer.",
